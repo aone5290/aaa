@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>菲律賓宿霧薄荷島</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        heading: ['"Quicksand"', '"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        island: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            300: '#5eead4',
+                            500: '#14b8a6',
+                            700: '#0f766e',
+                            900: '#134e4a',
+                            sand: '#fdfbf7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .app-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #fdfbf7;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding-bottom: 80px; /* 底部導航預留空間 */
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+<div class="app-container relative">
+
+    <header class="bg-island-500 text-white p-6 rounded-b-[2rem] shadow-md sticky top-0 z-20">
+        <h1 class="text-2xl font-heading font-bold tracking-wider">Cebu & Bohol</h1>
+        <p class="text-island-100 text-sm mt-1">11.16 - 11.21 </p>
+    </header>
+
+    <section id="plan" class="tab-content active p-5">
+        
+        <div class="bg-white rounded-2xl shadow-sm p-4 mb-6 border border-island-100">
+            <h3 class="font-bold text-island-700 mb-3"><i class="fa-solid fa-plane-departure mr-2"></i>航班與住宿資訊</h3>
+            <div class="text-sm space-y-2 text-gray-600">
+                <p><strong>✈️ 去程：</strong> 11/16 宿霧太平洋5J345 (高雄20:00 - 馬尼拉21:55) </p>
+                                             轉</p>
+                                             11/17 菲律賓航空PR2771 (馬尼拉05:00 - 邦勞06:30)</p>
+                <p><strong>✈️ 回程：</strong> 11/21 華航CI706 (宿霧12:10 - 桃園14:55)</p>
+                <hr class="my-2 border-dashed">
+                <p><strong>🏨 11/17-18：</strong> Mario Dive Resort (薄荷島)(5100P/晚)</p>
+                <p><strong>🏨 11/19：</strong> Joaquin's Bed and Breakfast (若阿金小屋) (1710P/晚)</p>
+                <p><strong>🏨 11/20：</strong> Hop inn hotel (宿霧市區)(1662P/晚)</p>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <div class="relative pl-6 border-l-2 border-island-300">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-island-500 rounded-full"></div>
+                <h2 class="font-bold text-lg text-island-900 mb-2">11/16 (六) 出發</h2>
+                
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <div class="text-xs text-island-500 font-bold mb-1">16:00</div>
+                    <p class="font-medium">家裡出發搭捷運至小港機場</p>
+                    <p class="text-xs text-gray-500 mt-1">下午請假半天，宿霧航空報到</p>
+                </div>
+
+                <div class="bg-orange-50 border border-orange-200 p-3 rounded-xl shadow-sm mb-3">
+                    <div class="text-xs text-orange-600 font-bold mb-1">20:00 - 21:55 (航班)</div>
+                    <p class="font-medium text-orange-900">高雄起飛 ➔ 馬尼拉 T3 航廈</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl shadow-sm">
+                    <p class="font-medium">抵達馬尼拉 T3</p>
+                    <ul class="text-sm text-gray-600 list-disc ml-4 mt-1">
+                        <li>1F 尋找換錢所換匯</li>
+                        <li>搭乘 Free Terminal Transfer shuttle 至 T2</li>
+                        <li>吃晚餐與休息</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-island-300">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-island-500 rounded-full"></div>
+                <h2 class="font-bold text-lg text-island-900 mb-2">11/17 (日) 前進薄荷島</h2>
+                
+                <div class="bg-orange-50 border border-orange-200 p-3 rounded-xl shadow-sm mb-3">
+                    <div class="text-xs text-orange-600 font-bold mb-1">02:00 報到 / 05:00 - 06:30 航班</div>
+                    <p class="font-medium text-orange-900">馬尼拉 ➔ 邦勞機場 (薄荷島)</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <p class="font-medium">接駁與入住</p>
+                    <p class="text-sm text-gray-600">用line聯絡蔡宗霖接駁至 Mario Dive Resort 。放行李後跟住宿借機車。</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <p class="font-medium">陸上景點觀光</p>
+                    <div class="flex gap-2 mt-2 flex-wrap">
+                        <a href="https://maps.app.goo.gl/zFvrzie9PeDeGVT26" target="_blank" class="px-3 py-1 bg-island-50 text-island-700 text-xs rounded-full border border-island-200"><i class="fa-solid fa-map-location-dot mr-1"></i>巧克力山 (300P)</a>
+                        <a href="https://maps.app.goo.gl/BFScW5gCRBshj33C8" target="_blank" class="px-3 py-1 bg-island-50 text-island-700 text-xs rounded-full border border-island-200"><i class="fa-solid fa-map-location-dot mr-1"></i>眼鏡猴 (340P)</a>
+                        <a href="https://maps.app.goo.gl/C5wZUqX7SFHFGW9h6" target="_blank" class="px-3 py-1 bg-island-50 text-island-700 text-xs rounded-full border border-island-200"><i class="fa-solid fa-map-location-dot mr-1"></i>羅伯克河船遊 (2400P)</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-3 rounded-xl shadow-sm">
+                    <p class="font-medium">晚餐</p>
+                    <p class="text-sm text-gray-600">飯店或騎車出門覓食</p>
+                </div>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-island-300">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-island-500 rounded-full"></div>
+                <h2 class="font-bold text-lg text-island-900 mb-2">11/18 (一) 跳島水下探索</h2>
+                
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <p class="font-medium text-island-700"><i class="fa-solid fa-ship mr-1"></i> 飯店跳島行程 (5300P)</p>
+                    <p class="text-sm text-gray-600 mt-1">Balicasag (巴里卡薩島) + 處女島拍照</p>
+                    <p class="text-xs text-red-500 font-bold mt-1">⚠️ 記得帶空拍機！</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl shadow-sm">
+                    <p class="font-medium">午後時光</p>
+                    <p class="text-sm text-gray-600">飯店耍廢，晚餐飯店或騎車覓食</p>
+                </div>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-island-300">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-island-500 rounded-full"></div>
+                <h2 class="font-bold text-lg text-island-900 mb-2">11/19 (二) 宿霧南部轉移</h2>
+                
+                <div class="bg-orange-50 border border-orange-200 p-3 rounded-xl shadow-sm mb-3">
+                    <div class="text-xs text-orange-600 font-bold mb-1">09:00 出發 / 09:30抵達港口</div>
+                    <p class="font-medium text-orange-900">Tagbilaran 港口</p>
+                    <a href="https://achilife.tw/oceanjet-%e9%ab%98%e9%80%9f%e6%b8%a1%e8%bc%aa/" target="_blank" class="inline-block mt-2 px-3 py-1 bg-white text-gray-700 text-xs rounded-full border border-gray-300"><i class="fa-solid fa-link mr-1"></i> OceanJet 乘船參考</a>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <p class="font-medium">入住 若阿金小屋</p>
+                    <p class="text-sm text-gray-600">Joaquin's Bed and Breakfast (Agoda訂房)</p>
+                </div>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-island-300">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-island-500 rounded-full"></div>
+                <h2 class="font-bold text-lg text-island-900 mb-2">11/20 (三) 鯨鯊與宿霧古城</h2>
+                
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <p class="font-medium text-blue-700"><i class="fa-solid fa-fish-fins mr-1"></i> 與鯨鯊共游</p>
+                    <p class="text-sm text-gray-600 mt-1">看完鯨鯊後盥洗整理</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <div class="text-xs text-gray-500 font-bold mb-1">約中午</div>
+                    <p class="font-medium">路邊搭冷氣公車 ➔ 宿霧市區</p>
+                    <p class="text-sm text-gray-600 mt-1">抵達 Hop inn hotel (Agoda)，先吃飯與放行李</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <p class="font-medium">市區觀光 (搭 Grab)</p>
+                    <div class="flex gap-2 mt-2 flex-wrap">
+                        <span class="px-3 py-1 bg-island-50 text-island-700 text-xs rounded-full border border-island-200">聖佩特羅堡</span>
+                        <span class="px-3 py-1 bg-island-50 text-island-700 text-xs rounded-full border border-island-200">麥哲倫十字架</span>
+                        <span class="px-3 py-1 bg-island-50 text-island-700 text-xs rounded-full border border-island-200">聖嬰大教堂</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-3 rounded-xl shadow-sm">
+                    <p class="font-medium">晚上行程</p>
+                    <p class="text-sm text-gray-600">Ayala 購物中心買伴手禮</p>
+                </div>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-island-300">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-island-500 rounded-full"></div>
+                <h2 class="font-bold text-lg text-island-900 mb-2">11/21 (四) 賦歸</h2>
+                
+                <div class="bg-white p-3 rounded-xl shadow-sm mb-3">
+                    <p class="font-medium">退房出發</p>
+                    <p class="text-sm text-gray-600">搭 Grab 前往宿霧機場 T2 (華航報到)</p>
+                </div>
+
+                <div class="bg-orange-50 border border-orange-200 p-3 rounded-xl shadow-sm mb-3">
+                    <div class="text-xs text-orange-600 font-bold mb-1">12:10 - 14:55 航班</div>
+                    <p class="font-medium text-orange-900">宿霧 ➔ 桃園機場</p>
+                </div>
+                
+                <div class="bg-white p-3 rounded-xl shadow-sm">
+                    <p class="font-medium">回溫暖的家</p>
+                    <p class="text-sm text-gray-600">搭高鐵回高雄 (2660 NTD)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="tab-content p-5">
+        
+        <div class="mb-6 rounded-2xl overflow-hidden shadow-md relative bg-black">
+            <img src="https://images.unsplash.com/photo-1518182170546-076616fd61fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bohol" class="w-full h-48 object-cover opacity-80">
+            <div class="absolute bottom-4 left-4 text-white">
+                <h2 class="text-2xl font-heading font-bold drop-shadow-lg">Bohol Island</h2>
+                <p class="text-sm drop-shadow-md">薄荷島自然奇觀</p>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <article class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-island-900 mb-2">巧克力山 Chocolate Hills</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                    這1,200多座圓錐形小山丘是薄荷島最著名的自然景觀。在旱季時，山上的草會乾枯轉為咖啡色，宛如一顆顆巨大的松露巧克力散佈在平原上。地質學家推測這是石灰岩風化、雨水侵蝕與地殼變動的綜合傑作。
+                </p>
+                <div class="bg-gray-50 p-3 rounded-lg text-xs text-gray-500">
+                    💡 <strong>拍攝攻略：</strong> 清晨或傍晚的斜射光能讓山丘的立體感更加鮮明。
+                </div>
+            </article>
+
+            <article class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-island-900 mb-2">菲律賓眼鏡猴 Tarsier</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                    全世界最小的靈長類動物之一，體型僅有成人的拳頭大小，卻有著不成比例的巨大眼睛（每顆眼球比腦容量還大！）。牠們是夜行性動物，白天通常抱在樹幹上睡覺。
+                </p>
+                <div class="bg-red-50 text-red-800 p-3 rounded-lg text-xs">
+                    ⚠️ <strong>禁忌：</strong> 參觀時請保持絕對安靜，且<strong>嚴禁使用閃光燈</strong>。眼鏡猴生性敏感，受到驚嚇可能會撞樹自殺。
+                </div>
+            </article>
+
+            <article class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-island-900 mb-2">麥哲倫十字架 Magellan's Cross</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                    1521年葡萄牙探險家麥哲倫抵達宿霧時設立。這標誌著天主教在菲律賓的開端。據說原始的十字架木屑具有治百病的奇效，為避免被信徒刮壞，目前被包裹在一個空心的木製十字架內。
+                </p>
+            </article>
+
+            <div class="bg-white p-2 rounded-2xl shadow-sm border border-gray-100 h-64 overflow-hidden">
+                <h3 class="text-sm font-bold text-island-900 mb-2 px-2 pt-2">宿霧/薄荷島 地圖概覽</h3>
+                <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=123.6%2C9.5%2C124.3%2C10.3&amp;layer=mapnik" style="border: 0; border-radius: 12px;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="wallet" class="tab-content p-5">
+        
+        <div class="bg-white p-4 rounded-2xl shadow-sm mb-5 border border-island-100 flex items-center justify-between">
+            <div>
+                <h3 class="font-bold text-island-900 text-sm">目前匯率設定</h3>
+                <p class="text-xs text-gray-500">1 披索 (PHP) = <span id="rateDisplay">0.57</span> 台幣 (TWD)</p>
+            </div>
+            <button onclick="updateRate()" class="px-3 py-1 bg-island-50 text-island-700 text-xs rounded-full border border-island-200">修改匯率</button>
+        </div>
+
+        <div class="bg-island-700 p-5 rounded-2xl shadow-md mb-6 text-white">
+            <h2 class="text-lg font-bold mb-4"><i class="fa-solid fa-calculator mr-2"></i>新增花費</h2>
+            
+            <input type="text" id="expenseName" placeholder="消費品項 (如：晚餐、門票)" class="w-full bg-island-900/50 border border-island-500 rounded-xl p-3 mb-3 text-white placeholder-island-100/70 focus:outline-none focus:border-island-300">
+            
+            <div class="flex gap-2 mb-3">
+                <input type="text" id="expenseCalc" placeholder="披索金額或算式 (如 500+120*2)" class="w-full bg-island-900/50 border border-island-500 rounded-xl p-3 text-white placeholder-island-100/70 focus:outline-none focus:border-island-300">
+            </div>
+            
+            <div class="mb-4">
+                <label class="flex items-center justify-center w-full bg-island-800 hover:bg-island-900 border border-dashed border-island-400 rounded-xl p-3 cursor-pointer transition">
+                    <i class="fa-solid fa-camera mr-2"></i>
+                    <span id="photoLabel" class="text-sm">附上照片 (收據/實物)</span>
+                    <input type="file" id="expenseImage" accept="image/*" class="hidden" onchange="previewImage(event)">
+                </label>
+                <img id="imagePreview" class="hidden mt-2 rounded-lg max-h-32 mx-auto" />
+                <canvas id="compressCanvas" class="hidden"></canvas>
+            </div>
+
+            <button onclick="addExpense()" class="w-full bg-island-300 hover:bg-island-400 text-island-900 font-bold py-3 rounded-xl transition shadow-sm">
+                儲存記帳
+            </button>
+        </div>
+
+        <div>
+            <div class="flex justify-between items-end mb-3">
+                <h3 class="font-bold text-gray-700">花費紀錄</h3>
+                <div class="text-right">
+                    <p class="text-xs text-gray-500">總計 (TWD)</p>
+                    <p class="font-bold text-island-700 text-xl" id="totalTwd">NT$ 0</p>
+                </div>
+            </div>
+            
+            <div id="expenseList" class="space-y-3">
+                </div>
+            
+            <button onclick="clearExpenses()" class="w-full mt-5 text-sm text-red-400 border border-red-200 rounded-lg py-2 hover:bg-red-50">
+                清除所有紀錄
+            </button>
+        </div>
+
+    </section>
+
+    <section id="lists" class="tab-content p-5">
+        
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-island-100 mb-6">
+            <h3 class="font-bold text-island-900 mb-4 border-b border-gray-100 pb-2"><i class="fa-solid fa-suitcase-rolling mr-2"></i>行前準備 CheckList</h3>
+            <div id="checklistContainer" class="space-y-3">
+                </div>
+        </div>
+
+        <div class="bg-yellow-50 p-5 rounded-2xl shadow-sm border border-yellow-200">
+            <h3 class="font-bold text-yellow-800 mb-2"><i class="fa-regular fa-note-sticky mr-2"></i>個人備忘錄</h3>
+            <p class="text-xs text-yellow-600 mb-3">輸入文字會自動保存。若輸入網址會自動轉成連結。</p>
+            
+            <textarea id="memoInput" rows="5" class="w-full bg-white border border-yellow-300 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none mb-3" placeholder="在這裡輸入筆記..."></textarea>
+            
+            <div id="memoPreview" class="text-sm space-y-2 break-words p-3 bg-white rounded-xl min-h-[50px] border border-gray-100 shadow-inner">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="info" class="tab-content p-5">
+        
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <a href="https://www.accuweather.com/zh/ph/panglao/262270/weather-forecast/262270" target="_blank" class="bg-gradient-to-br from-blue-400 to-blue-500 p-4 rounded-2xl shadow-sm text-white flex flex-col items-center justify-center text-center">
+                <i class="fa-solid fa-cloud-sun text-3xl mb-2"></i>
+                <span class="font-bold">邦勞天氣</span>
+                <span class="text-xs text-blue-100 mt-1">點擊看預報</span>
+            </a>
+            
+            <a href="https://etravel.gov.ph/" target="_blank" class="bg-gradient-to-br from-island-500 to-island-600 p-4 rounded-2xl shadow-sm text-white flex flex-col items-center justify-center text-center">
+                <i class="fa-solid fa-qrcode text-3xl mb-2"></i>
+                <span class="font-bold">eTravel</span>
+                <span class="text-xs text-island-100 mt-1">出入境必備填寫</span>
+            </a>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-6">
+            <h3 class="font-bold text-red-700 mb-3"><i class="fa-solid fa-truck-medical mr-2"></i>緊急聯絡</h3>
+            <ul class="text-sm space-y-3 text-gray-700">
+                <li class="flex justify-between items-center">
+                    <span>菲律賓報案/緊急求助</span>
+                    <a href="tel:911" class="font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">911</a>
+                </li>
+                <li class="flex justify-between items-center">
+                    <span>駐菲代表處 (急難救助)</span>
+                    <a href="tel:+639178194597" class="font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">+63 917 819 4597</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+            <h3 class="font-bold text-island-900 mb-3"><i class="fa-solid fa-circle-exclamation mr-2"></i>注意事項與禁忌</h3>
+            <ul class="list-disc ml-5 text-sm text-gray-600 space-y-2">
+                <li><strong>電子菸禁令：</strong> 菲律賓嚴格管制電子菸，攜帶入境可能遭沒收或面臨罰款，建議完全不要攜帶。</li>
+                <li><strong>現金限制：</strong> 入出境攜帶超過 50,000 披索 或 10,000 美金 需事前申報。</li>
+                <li><strong>小費文化：</strong> 菲律賓有小費習慣。搬行李、床頭小費通常給 20~50 披索（紙鈔，避免給硬幣）。</li>
+                <li><strong>環保規定：</strong> 跳島或下水時，請勿塗抹含有害珊瑚成分的防曬乳，勿觸碰海龜與鯨鯊，違者重罰。</li>
+                <li><strong>治安提醒：</strong> 宿霧市區人多手雜，請將背包背在胸前，手機勿隨意放置桌上。</li>
+            </ul>
+        </div>
+    </section>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] z-50">
+        <div class="max-w-[480px] mx-auto flex justify-between items-center px-6 py-3">
+            <button onclick="switchTab('plan')" class="nav-btn flex flex-col items-center text-island-500 transition-colors w-12" data-tab="plan">
+                <i class="fa-solid fa-route text-xl mb-1"></i>
+                <span class="text-[10px] font-bold">PLAN</span>
+            </button>
+            <button onclick="switchTab('guide')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-island-400 transition-colors w-12" data-tab="guide">
+                <i class="fa-solid fa-book-open text-xl mb-1"></i>
+                <span class="text-[10px] font-bold">GUIDE</span>
+            </button>
+            <button onclick="switchTab('wallet')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-island-400 transition-colors w-12" data-tab="wallet">
+                <i class="fa-solid fa-wallet text-xl mb-1"></i>
+                <span class="text-[10px] font-bold">WALLET</span>
+            </button>
+            <button onclick="switchTab('lists')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-island-400 transition-colors w-12" data-tab="lists">
+                <i class="fa-solid fa-list-check text-xl mb-1"></i>
+                <span class="text-[10px] font-bold">LISTS</span>
+            </button>
+            <button onclick="switchTab('info')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-island-400 transition-colors w-12" data-tab="info">
+                <i class="fa-solid fa-circle-info text-xl mb-1"></i>
+                <span class="text-[10px] font-bold">INFO</span>
+            </button>
+        </div>
+    </nav>
+
+</div>
+
+<script>
+    // ==================== 頁籤切換 ====================
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            if (btn.dataset.tab === tabId) {
+                btn.classList.add('text-island-500');
+                btn.classList.remove('text-gray-400');
+            } else {
+                btn.classList.remove('text-island-500');
+                btn.classList.add('text-gray-400');
+            }
+        });
+        window.scrollTo(0, 0);
+    }
+
+    // ==================== LISTS: 行前清單 ====================
+    const defaultChecklist = [
+        "1. eTravel 登錄資訊拿 QRCode",
+        "2. 潛水裝備",
+        "3. 換洗衣物",
+        "4. 盥洗用品",
+        "5. 藥物 (腸胃、暈車船)",
+        "6. 攝影器材 (含空拍機)",
+        "7. 換美金 (至當地換披索)",
+        "8. 一個月前訂高鐵",
+        "9. eSIM 設定",
+        "10. 國際駕照"
+    ];
+
+    function initChecklist() {
+        const stored = JSON.parse(localStorage.getItem('bohol_checklist')) || {};
+        const container = document.getElementById('checklistContainer');
+        container.innerHTML = '';
+        
+        defaultChecklist.forEach((item, index) => {
+            const isChecked = stored[index] || false;
+            const div = document.createElement('div');
+            div.className = "flex items-center gap-3";
+            div.innerHTML = `
+                <input type="checkbox" id="check_${index}" ${isChecked ? 'checked' : ''} 
+                       class="w-5 h-5 text-island-500 rounded border-gray-300 focus:ring-island-500"
+                       onchange="saveChecklist(${index}, this.checked)">
+                <label for="check_${index}" class="text-sm ${isChecked ? 'text-gray-400 line-through' : 'text-gray-700'}">${item}</label>
+            `;
+            container.appendChild(div);
+        });
+    }
+
+    function saveChecklist(index, checked) {
+        const stored = JSON.parse(localStorage.getItem('bohol_checklist')) || {};
+        stored[index] = checked;
+        localStorage.setItem('bohol_checklist', JSON.stringify(stored));
+        initChecklist(); // re-render to update line-through
+    }
+
+    // ==================== LISTS: 備忘錄 (自動轉換連結) ====================
+    const memoInput = document.getElementById('memoInput');
+    const memoPreview = document.getElementById('memoPreview');
+
+    function renderMemo() {
+        const text = memoInput.value;
+        localStorage.setItem('bohol_memo', text);
+        
+        // 替換 URL 為 a 標籤
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        const htmlText = text
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") // basic xss prevent
+            .replace(/\n/g, '<br>')
+            .replace(urlRegex, function(url) {
+                return `<a href="${url}" target="_blank" class="inline-block mt-1 px-3 py-1 bg-island-50 text-island-600 rounded-full border border-island-200 text-xs shadow-sm hover:bg-island-100 transition"><i class="fa-solid fa-link mr-1"></i>開啟連結</a>`;
+            });
+        
+        memoPreview.innerHTML = htmlText || '<span class="text-gray-400 italic">尚無筆記內容...</span>';
+    }
+
+    memoInput.addEventListener('input', renderMemo);
+    
+    function initMemo() {
+        const stored = localStorage.getItem('bohol_memo') || '';
+        memoInput.value = stored;
+        renderMemo();
+    }
+
+    // ==================== WALLET: 匯率與記帳 ====================
+    let phpRate = parseFloat(localStorage.getItem('bohol_php_rate')) || 0.57;
+    let base64Image = null;
+
+    document.getElementById('rateDisplay').innerText = phpRate;
+
+    function updateRate() {
+        const newRate = prompt("請輸入 1 披索等於多少台幣 (預設 0.57)：", phpRate);
+        if (newRate && !isNaN(newRate)) {
+            phpRate = parseFloat(newRate);
+            localStorage.setItem('bohol_php_rate', phpRate);
+            document.getElementById('rateDisplay').innerText = phpRate;
+            renderExpenses(); // 更新匯率後重算
+        }
+    }
+
+    // Canvas 壓縮圖片
+    function previewImage(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        
+        const label = document.getElementById('photoLabel');
+        label.innerText = "圖片處理中...";
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const img = new Image();
+            img.onload = function() {
+                const canvas = document.getElementById('compressCanvas');
+                const ctx = canvas.getContext('2d');
+                
+                // 設定最大長寬 300px 壓縮以節省 localStorage 空間
+                const MAX_WIDTH = 300;
+                const MAX_HEIGHT = 300;
+                let width = img.width;
+                let height = img.height;
+
+                if (width > height) {
+                    if (width > MAX_WIDTH) {
+                        height *= MAX_WIDTH / width;
+                        width = MAX_WIDTH;
+                    }
+                } else {
+                    if (height > MAX_HEIGHT) {
+                        width *= MAX_HEIGHT / height;
+                        height = MAX_HEIGHT;
+                    }
+                }
+
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(img, 0, 0, width, height);
+
+                // 轉為 base64 (品質 0.6)
+                base64Image = canvas.toDataURL('image/jpeg', 0.6);
+                
+                const preview = document.getElementById('imagePreview');
+                preview.src = base64Image;
+                preview.classList.remove('hidden');
+                label.innerText = "重新選擇照片";
+            }
+            img.src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+    }
+
+    function evalMathSafe(expr) {
+        try {
+            // 只允許數字與基礎運算符號
+            if (!/^[0-9+\-*/.() ]+$/.test(expr)) return null;
+            return Function(`'use strict'; return (${expr})`)();
+        } catch (e) {
+            return null;
+        }
+    }
+
+    function addExpense() {
+        const name = document.getElementById('expenseName').value.trim();
+        const calcStr = document.getElementById('expenseCalc').value.trim();
+        
+        if (!name || !calcStr) {
+            alert("請輸入花費品項與金額！");
+            return;
+        }
+
+        const phpAmount = evalMathSafe(calcStr);
+        if (phpAmount === null || isNaN(phpAmount)) {
+            alert("金額算式有誤，請輸入正確的數字或算式！");
+            return;
+        }
+
+        const twdAmount = Math.round(phpAmount * phpRate);
+        const newRecord = {
+            id: Date.now(),
+            name: name,
+            php: phpAmount,
+            twd: twdAmount,
+            img: base64Image,
+            date: new Date().toLocaleDateString('zh-TW', {month: 'numeric', day: 'numeric', hour: '2-digit', minute:'2-digit'})
+        };
+
+        const expenses = JSON.parse(localStorage.getItem('bohol_expenses')) || [];
+        
+        try {
+            expenses.unshift(newRecord);
+            localStorage.setItem('bohol_expenses', JSON.stringify(expenses));
+        } catch (e) {
+            alert("儲存失敗！可能是照片過多導致儲存空間不足，請清除部分紀錄。");
+            return;
+        }
+
+        // Reset inputs
+        document.getElementById('expenseName').value = '';
+        document.getElementById('expenseCalc').value = '';
+        document.getElementById('imagePreview').classList.add('hidden');
+        document.getElementById('photoLabel').innerText = "附上照片 (收據/實物)";
+        document.getElementById('expenseImage').value = '';
+        base64Image = null;
+
+        renderExpenses();
+    }
+
+    function removeExpense(id) {
+        if(confirm("確定要刪除這筆紀錄嗎？")){
+            let expenses = JSON.parse(localStorage.getItem('bohol_expenses')) || [];
+            expenses = expenses.filter(ex => ex.id !== id);
+            localStorage.setItem('bohol_expenses', JSON.stringify(expenses));
+            renderExpenses();
+        }
+    }
+
+    function clearExpenses() {
+        if(confirm("⚠️ 警告：這將刪除所有記帳紀錄與照片！確定嗎？")){
+            localStorage.removeItem('bohol_expenses');
+            renderExpenses();
+        }
+    }
+
+    function renderExpenses() {
+        const expenses = JSON.parse(localStorage.getItem('bohol_expenses')) || [];
+        const container = document.getElementById('expenseList');
+        let totalTwd = 0;
+        
+        container.innerHTML = '';
+        
+        if (expenses.length === 0) {
+            container.innerHTML = '<p class="text-sm text-gray-400 text-center py-4">尚無記帳紀錄</p>';
+        }
+
+        expenses.forEach(ex => {
+            // 動態根據當前匯率重算（也可以固定當時匯率，這裡採用動態）
+            const currentTwd = Math.round(ex.php * phpRate);
+            totalTwd += currentTwd;
+
+            const div = document.createElement('div');
+            div.className = "bg-white p-3 rounded-xl shadow-sm border border-gray-100 flex gap-3";
+            
+            let imgHtml = '';
+            if (ex.img) {
+                imgHtml = `<img src="${ex.img}" class="w-16 h-16 object-cover rounded-lg shrink-0 border border-gray-200">`;
+            } else {
+                imgHtml = `<div class="w-16 h-16 bg-gray-50 flex items-center justify-center rounded-lg shrink-0 text-gray-300 border border-gray-100"><i class="fa-solid fa-receipt"></i></div>`;
+            }
+
+            div.innerHTML = `
+                ${imgHtml}
+                <div class="flex-grow flex flex-col justify-between">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-bold text-gray-800 text-sm leading-tight">${ex.name}</p>
+                            <p class="text-[10px] text-gray-400 mt-0.5">${ex.date}</p>
+                        </div>
+                        <button onclick="removeExpense(${ex.id})" class="text-gray-300 hover:text-red-400 p-1"><i class="fa-solid fa-trash-can text-sm"></i></button>
+                    </div>
+                    <div class="flex justify-between items-end mt-1">
+                        <span class="text-xs text-gray-500 font-medium">₱ ${ex.php}</span>
+                        <span class="text-sm font-bold text-island-700">NT$ ${currentTwd}</span>
+                    </div>
+                </div>
+            `;
+            container.appendChild(div);
+        });
+
+        document.getElementById('totalTwd').innerText = `NT$ ${totalTwd.toLocaleString()}`;
+    }
+
+    // ==================== 初始化 ====================
+    window.onload = function() {
+        initChecklist();
+        initMemo();
+        renderExpenses();
+    };
+
+</script>
+
+</body>
+</html>
